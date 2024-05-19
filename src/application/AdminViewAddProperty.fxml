@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #b7e8f2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminViewAddProController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #192b39;">
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="147.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/images.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="59.0" layoutY="545.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="30.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/apartments.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="152.0" text="Property Section" textFill="#d7cdcd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="17.0" layoutY="353.0" text="Admin Control" textFill="#d7cdcd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="32.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/add-group.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="32.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/house.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="30.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/grocery-store.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="30.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/internet.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="66.0" layoutY="178.0" mnemonicParsing="false" onAction="#AdminViewAppartment" prefHeight="25.0" prefWidth="118.0" text="Appartments" />
+            <Button layoutX="66.0" layoutY="216.0" mnemonicParsing="false" onAction="#AdminViewCommercial" prefHeight="25.0" prefWidth="118.0" text="Commercial Space" />
+            <Button layoutX="66.0" layoutY="252.0" mnemonicParsing="false" onAction="#AdminViewLease" prefHeight="25.0" prefWidth="118.0" text="Lease Records" />
+            <Button layoutX="66.0" layoutY="385.0" mnemonicParsing="false" onAction="#AdminViewAddUser" prefHeight="25.0" prefWidth="118.0" text="Add User" />
+            <Button layoutX="66.0" layoutY="424.0" mnemonicParsing="false" onAction="#AdminViewAddProperty" prefHeight="25.0" prefWidth="118.0" text="Add Property" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="224.0" layoutY="14.0" text="Add Appartment">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="54.0" text="Location :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="89.0" text="Rent :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationAppTf" layoutX="375.0" layoutY="50.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Appartment Location" />
+      <TextField fx:id="rentAppTf" layoutX="375.0" layoutY="85.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Appartment Rent" />
+      <Label layoutX="225.0" layoutY="239.0" text="Has Generator :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="661.0" layoutY="270.0" mnemonicParsing="false" onAction="#addProperty" style="-fx-background-color: #0eb38a; -fx-background-radius: 10;" text="Add Apparment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="hasgCB" layoutX="377.0" layoutY="240.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="15.0" />
+      <Label layoutX="224.0" layoutY="125.0" text="Floor Space :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="floorAppTf" layoutX="375.0" layoutY="121.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Appartment Floor Space" />
+      <Label layoutX="225.0" layoutY="163.0" text="No of Bed :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nbTf" layoutX="376.0" layoutY="159.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Appartment No of Bedrooms" />
+      <Label layoutX="225.0" layoutY="199.0" text="No of Washroom :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="nwTf" layoutX="376.0" layoutY="195.0" prefHeight="25.0" prefWidth="309.0" promptText="Enter Appartment No of Washrooms" />
+      <Label layoutX="224.0" layoutY="341.0" text="Add Commercial Space">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="381.0" text="Location :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="224.0" layoutY="416.0" text="Rent :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationComTf" layoutX="375.0" layoutY="377.0" prefHeight="25.0" prefWidth="309.0" promptText="Commercial Space Location" />
+      <TextField fx:id="rentComTf" layoutX="375.0" layoutY="412.0" prefHeight="25.0" prefWidth="309.0" promptText="Commercial Space Rent" />
+      <Label layoutX="224.0" layoutY="492.0" text="Has Fire Exit :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="661.0" layoutY="553.0" mnemonicParsing="false" onAction="#addCommercial" style="-fx-background-color: #0eb38a; -fx-background-radius: 10;" text="Add Commercial" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <CheckBox fx:id="hasfCB" layoutX="376.0" layoutY="493.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="15.0" />
+      <Label layoutX="224.0" layoutY="452.0" text="Floor Space :">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="floorComTf" layoutX="375.0" layoutY="448.0" prefHeight="25.0" prefWidth="309.0" promptText="Commercial Space Floor Space" />
+   </children>
+</AnchorPane>

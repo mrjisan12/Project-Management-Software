@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #b7e8f2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserViewComController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #192b39;">
+         <children>
+            <ImageView fitHeight="143.0" fitWidth="147.0" layoutX="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/images.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="59.0" layoutY="545.0" mnemonicParsing="false" onAction="#logout" style="-fx-background-color: #ffffff; -fx-background-radius: 10;" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="29.0" fitWidth="35.0" layoutX="30.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/apartments.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="16.0" layoutY="152.0" text="Property Section" textFill="#d7cdcd">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="30.0" layoutY="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/grocery-store.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="40.0" fitWidth="35.0" layoutX="30.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Users/mizan/Downloads/internet.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="66.0" layoutY="178.0" mnemonicParsing="false" onAction="#UserViewAppartment" prefHeight="25.0" prefWidth="118.0" text="Appartments" />
+            <Button layoutX="66.0" layoutY="216.0" mnemonicParsing="false" onAction="#UserViewCommercial" prefHeight="25.0" prefWidth="118.0" text="Commercial Space" />
+            <Button layoutX="66.0" layoutY="252.0" mnemonicParsing="false" onAction="#UserViewLease" prefHeight="25.0" prefWidth="118.0" text="Lease Records" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="userTable" layoutX="223.0" layoutY="123.0" prefHeight="421.0" prefWidth="567.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="82.66667175292969" text="ID" />
+          <TableColumn fx:id="locationCol" prefWidth="112.66665649414062" text="Location" />
+            <TableColumn fx:id="floorSpaceCol" prefWidth="113.99996948242188" text="Floor Space" />
+            <TableColumn fx:id="rentCol" minWidth="0.0" prefWidth="103.33331298828125" text="Rent" />
+            <TableColumn fx:id="hasFireExitrCol" minWidth="0.0" prefWidth="80.66668701171875" text="Has Fire Exit" />
+            <TableColumn fx:id="isAvailableCol" prefWidth="74.00006103515625" text="Availability" />
+        </columns>
+      </TableView>
+      <TextField fx:id="locTf" layoutX="223.0" layoutY="85.0" prefHeight="25.0" prefWidth="222.0" promptText="Location" />
+      <TextField fx:id="floorspTf" layoutX="480.0" layoutY="85.0" prefHeight="25.0" prefWidth="200.0" promptText="Floor Space" />
+      <Button layoutX="694.0" layoutY="83.0" mnemonicParsing="false" onAction="#Search" prefHeight="29.0" prefWidth="83.0" style="-fx-background-color: #00a862; -fx-background-radius: 10;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="223.0" layoutY="36.0" text="Commercial Space">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField layoutX="338.0" layoutY="555.0" prefHeight="25.0" prefWidth="103.0" promptText="User ID" />
+      <DatePicker layoutX="451.0" layoutY="555.0" prefHeight="25.0" prefWidth="151.0" promptText="Start Date" />
+      <TextField layoutX="608.0" layoutY="555.0" prefHeight="25.0" prefWidth="95.0" promptText="Duration" />
+      <Button layoutX="714.0" layoutY="553.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="72.0" style="-fx-background-color: #00a862; -fx-background-radius: 10;" text=" Lease" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField layoutX="223.0" layoutY="555.0" prefHeight="25.0" prefWidth="103.0" promptText="Item ID" />
+   </children>
+</AnchorPane>
